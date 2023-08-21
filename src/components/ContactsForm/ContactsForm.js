@@ -9,7 +9,6 @@ import css from './ContactForm.module.css';
 export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(state => getContacts(state));
-  const isLoading = useSelector(state => state.contacts.isLoading);
 
   const handleSubmit = e => {
     e.preventDefault();

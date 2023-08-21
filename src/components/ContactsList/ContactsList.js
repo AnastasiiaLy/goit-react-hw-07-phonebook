@@ -6,7 +6,6 @@ import { getContacts, getFilter } from '../redux/selectors';
 import css from './ContactsList.module.css';
 export const ContactList = () => {
   const dispatch = useDispatch();
-  const isLoading = useSelector(state => state.contacts.isLoading);
 
   useEffect(() => {
     dispatch(fetchContacts());
