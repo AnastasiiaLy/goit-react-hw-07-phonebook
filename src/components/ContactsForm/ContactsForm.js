@@ -14,7 +14,7 @@ export const ContactForm = () => {
     e.preventDefault();
 
     const name = e.target.name.value;
-    const number = e.target.number.value;
+    const phone = e.target.number.value;
 
     if (name.trim() === '') {
       alert('Please enter a name');
@@ -24,7 +24,7 @@ export const ContactForm = () => {
     const newContact = {
       id: uuidv4(),
       name,
-      number,
+      phone,
     };
 
     if (
